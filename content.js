@@ -27,7 +27,6 @@ function hideVerifiedReplies() {
         const observer = new MutationObserver(() => {
           // Get all replies but exclude the original tweet
           const replies = document.querySelectorAll('[data-testid="tweet"]');
-          console.log("Hiding verified replies, replies:", replies);
 
           replies.forEach((reply, index) => {
             // Skip the original tweet (usually the first one)
